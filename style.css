@@ -58,8 +58,31 @@ h2::before{
     pointer-events: none;
     transition: 0.2s;
 } 
-.input_box:focus ~ .input_box label{
+.box .input_box input:focus ~ label,
+.box .input_box input:valid ~ label{
     top: -7px;
     font-size: 18px;
     color: blue;
+}
+.password_checkbox{
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+}
+.forget_password{
+   margin-top: 20px;
+   text-decoration: none;
+}
+.forget_password a{
+    text-decoration: none;
+}
+.login{
+    width: 100%;
+    background:linear-gradient(45deg , #07236ec9 , #9d8fcf);
+    font-size: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
 }
